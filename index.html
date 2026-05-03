@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ماكينتك من البنك الأهلي المصري - أول تطبيق ذكي بيدلك على أقرب ماكينة ATM شغالة وفيها فلوس"
+    />
+    <title>ماكينتك | البنك الأهلي المصري - أذكى تطبيق لماكينات الـ ATM</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ============================================
+         🏛️ NAVBAR
+    ============================================= -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-main">ماكينتك</span>
+            <span class="logo-sub">البنك الأهلي المصري</span>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#problem">المشكلة</a></li>
+          <li><a href="#how">إزاي بيشتغل</a></li>
+          <li><a href="#features">المميزات</a></li>
+          <li><a href="#ai">الذكاء الاصطناعي</a></li>
+          <li><a href="#faq">أسئلة شائعة</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn-ghost">دخول العملاء</button>
+          <button class="btn-primary">حمّل التطبيق</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ============================================
+         🌟 HERO SECTION
+    ============================================= -->
+    <section class="hero">
+      <div class="hero-pattern"></div>
+      <div class="hero-container">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <i class="fas fa-award"></i>
+            <span
+              >خدمة حصرية لعملاء البنك الأهلي المصري - الأقدم والأكبر في
+              مصر</span
+            >
+          </div>
+          <h1>
+            أذكى تطبيق لماكينات
+            <span class="text-gradient">الأهلي</span>
+            .. عمرك ما هتلاقي ماكينة فاضية تاني!
+          </h1>
+          <p class="hero-description">
+            "ماكينتك" هو أول تطبيق ذكي من
+            <strong>البنك الأهلي المصري (NBE)</strong> بيستخدم الذكاء الاصطناعي
+            عشان يدلك على أقرب ماكينة <strong>شغالة فعلاً</strong> من شبكة
+            الأهلي اللي بتضم أكتر من 4500 ماكينة في كل مصر.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-primary btn-large">
+              <i class="fab fa-google-play"></i>
+              <span>حمّل التطبيق دلوقتي</span>
+            </button>
+            <button class="btn-secondary btn-large">
+              <i class="fas fa-play-circle"></i>
+              <span>شوف فيديو تعريفي</span>
+            </button>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>معتمد من البنك المركزي المصري</span>
+            </div>
+            <div class="trust-item">
+              <i class="fas fa-lock"></i>
+              <span>تشفير بنكي بمعايير PCI-DSS</span>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>+4,500</h3>
+              <p>ماكينة أهلي في كل مصر</p>
+            </div>
+            <div class="stat-item">
+              <h3>+13M</h3>
+              <p>عميل يثقون في الأهلي</p>
+            </div>
+            <div class="stat-item">
+              <h3>1898</h3>
+              <p>سنة التأسيس</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-status-bar">
+                <span>9:41</span>
+                <div class="status-icons">
+                  <i class="fas fa-signal"></i>
+                  <i class="fas fa-wifi"></i>
+                  <i class="fas fa-battery-three-quarters"></i>
+                </div>
+              </div>
+              <div class="app-header">
+                <div class="app-bank-logo">
+                  <i class="fas fa-university"></i>
+                  <span>NBE</span>
+                </div>
+                <h4>أهلاً يا أحمد 👋</h4>
+                <h2>ابحث عن ماكينة الأهلي</h2>
+              </div>
+              <div class="search-box">
+                <i class="fas fa-search"></i>
+                <span>سحب 5,000 جنيه - دائرة 5 كم</span>
+              </div>
+              <div class="atm-card recommended">
+                <div class="atm-card-header">
+                  <h5>🏆 الأهلي - فرع التحرير</h5>
+                  <span class="badge-success">⭐ الأنسب ليك</span>
+                </div>
+                <p>1.2 كم • فيها فلوس • مفيش زحمة</p>
+                <div class="atm-card-services">
+                  <span>سحب</span>
+                  <span>إيداع</span>
+                  <span>تحويل</span>
+                </div>
+              </div>
+              <div class="atm-card">
+                <div class="atm-card-header">
+                  <h5>الأهلي - جاردن سيتي</h5>
+                  <span class="badge-info">متاحة</span>
+                </div>
+                <p>2.3 كم • شغالة • زحمة قليلة</p>
+              </div>
+              <div class="atm-card">
+                <div class="atm-card-header">
+                  <h5>الأهلي - وسط البلد</h5>
+                  <span class="badge-info">متاحة</span>
+                </div>
+                <p>2.8 كم • شغالة</p>
+              </div>
+            </div>
+          </div>
+          <div class="floating-card card-1">
+            <i class="fas fa-check-circle"></i>
+            <span>تم العثور على 12 ماكينة</span>
+          </div>
+          <div class="floating-card card-2">
+            <i class="fas fa-bolt"></i>
+            <span>وقت الاستجابة: 287ms</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         ⚠️ PROBLEM SECTION
+    ============================================= -->
+    <section class="problem" id="problem">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">المشكلة اللي بنحلها</span>
+          <h2>كل عميل بنك حصله ده مرة على الأقل!</h2>
+          <p>هتعرف نفسك في المواقف دي.. وإحنا في الأهلي جينا نحلها بذكاء</p>
+        </div>
+        <div class="problem-grid">
+          <div class="problem-card">
+            <div class="problem-icon">
+              <i class="fas fa-times-circle"></i>
+            </div>
+            <h3>ماكينة فاضية من الفلوس</h3>
+            <p>
+              بتروح الماكينة اللي جنبك وتلاقيها مش بتطلع فلوس، تبقى ضيعت وقتك ع
+              الفاضي!
+            </p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>ماكينة مش شغالة أصلاً</h3>
+            <p>
+              تلاقي اللافتة "خارج الخدمة" أو "تحت الصيانة" وأنت كنت محتاج فلوس
+              ضروري!
+            </p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">
+              <i class="fas fa-people-arrows"></i>
+            </div>
+            <h3>طوابير وزحمة</h3>
+            <p>
+              الماكينة شغالة بس فيها 20 واحد قدامك، ومش هتعرف تاخد فلوسك بسرعة!
+            </p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">
+              <i class="fas fa-ban"></i>
+            </div>
+            <h3>الخدمة اللي عاوزها مش متاحة</h3>
+            <p>عاوز تودع فلوس أو تعمل تحويل، وتلاقي إن الماكينة بتسحب بس!</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">
+              <i class="fas fa-route"></i>
+            </div>
+            <h3>تتنقل بين أكتر من ماكينة</h3>
+            <p>
+              تلف على 3 ماكينات عشان تلاقي واحدة شغالة وفيها فلوس.. ده هدر للوقت
+              والبنزين!
+            </p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>بتضيع نص ساعة على الأقل</h3>
+            <p>
+              وقت ثمين بيروح في البحث، خصوصاً لو إنت مستعجل أو في وقت متأخر!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         🚀 HOW IT WORKS
+    ============================================= -->
+    <section class="how-it-works" id="how">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">إزاي بيشتغل</span>
+          <h2>4 خطوات بس وخلصت!</h2>
+          <p>التطبيق سهل ومباشر، مفيش تعقيد ولا حاجة</p>
+        </div>
+        <div class="steps">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3>افتح التطبيق</h3>
+            <p>سجّل دخولك بحسابك في الأهلي وحدد مكانك الحالي</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-icon"><i class="fas fa-search-dollar"></i></div>
+            <h3>قول عاوز إيه</h3>
+            <p>سحب، إيداع، تحويل.. وحدد المبلغ اللي محتاجه</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-icon"><i class="fas fa-brain"></i></div>
+            <h3>الذكاء الاصطناعي بيفكر</h3>
+            <p>بنحلل كل ماكينات الأهلي حواليك ونختار الأنسب ليك</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-icon"><i class="fas fa-map-marked-alt"></i></div>
+            <h3>روح وخلّص</h3>
+            <p>هنوديك على الماكينة الصح ومتأكدين هتلاقي اللي محتاجه</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         ✨ FEATURES
+    ============================================= -->
+    <section class="features" id="features">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">المميزات</span>
+          <h2>ليه "ماكينتك" من الأهلي مختلف؟</h2>
+          <p>مش مجرد خريطة ماكينات.. ده مساعدك الذكي من أعرق بنك في مصر</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3>ترشيحات دقيقة</h3>
+            <p>
+              بنحلل حالة كل ماكينة من ماكينات الأهلي لحظياً (شغالة - فيها فلوس -
+              الزحمة)
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>ذكاء اصطناعي تنبؤي</h3>
+            <p>بنتنبأ هل الماكينة هتفضل فيها فلوس لما توصلها ولا هتفضى قبلك</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>توفير وقتك</h3>
+            <p>بدل ما تلف على 3 ماكينات، هنوديك على الصح من أول مرة</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>أمان بنكي عالي</h3>
+            <p>محمي بمعايير الأهلي البنكية وتقنيات تشفير من البنك المركزي</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>اسأل بلغتك</h3>
+            <p>
+              "عايز أسحب 5 آلاف قريب من شغلي".. التطبيق هيفهمك بالعربي العادي
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-bell"></i>
+            </div>
+            <h3>تنبيهات ذكية</h3>
+            <p>بنبعتلك إشعار لو الماكينة قربت تفضى أو فيها زحمة فجأة</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3>أكبر شبكة في مصر</h3>
+            <p>
+              شبكة الأهلي بتضم +4500 ماكينة في كل محافظات مصر، أكبر شبكة بنكية
+              في البلد
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-coins"></i>
+            </div>
+            <h3>كل خدمات الأهلي</h3>
+            <p>
+              سحب، إيداع، تحويل، استعلام، دفع فواتير - كل ده من ماكينة واحدة
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>دعم 24/7</h3>
+            <p>خدمة عملاء الأهلي متاحة على مدار الساعة لو احتجت أي مساعدة</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         🤖 AI SECTION
+    ============================================= -->
+    <section class="ai-section" id="ai">
+      <div class="section-container">
+        <div class="ai-content">
+          <div class="ai-text">
+            <span class="section-tag-light">الذكاء الاصطناعي</span>
+            <h2>
+              فريق من الـ <span class="text-gold">وكلاء الأذكياء</span> بيشتغلوا
+              عشانك
+            </h2>
+            <p>
+              تحت الكبوت، فيه فريق متكامل من الـ AI Agents بتاعة البنك الأهلي
+              بيتعاونوا مع بعض في أجزاء من الثانية عشان يطلعولك أحسن ترشيح ممكن.
+            </p>
+            <ul class="ai-features">
+              <li>
+                <i class="fas fa-check"></i>
+                <span>تحليل لحظي لحالة كل ماكينة في شبكة الأهلي</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span>تنبؤ ذكي بمستوى الكاش بناءً على الأنماط التاريخية</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span>كشف الاحتيال في أقل من نص ثانية</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span>شرح طبيعي لكل قرار (ليه رشحنالك الماكينة دي)</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i>
+                <span>تكامل مع نظام الأهلي البنكي بشكل آمن 100%</span>
+              </li>
+            </ul>
+          </div>
+          <div class="ai-visual">
+            <div class="agent-card">
+              <div class="agent-icon">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <div class="agent-info">
+                <h4>وكيل الجغرافيا</h4>
+                <p>بيلاقي كل ماكينات الأهلي حواليك ويرتبهم</p>
+              </div>
+            </div>
+            <div class="agent-card">
+              <div class="agent-icon">
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+              <div class="agent-info">
+                <h4>وكيل التنبؤ بالكاش</h4>
+                <p>بيتوقع لو الماكينة هتفضل فيها فلوس</p>
+              </div>
+            </div>
+            <div class="agent-card">
+              <div class="agent-icon">
+                <i class="fas fa-traffic-light"></i>
+              </div>
+              <div class="agent-info">
+                <h4>وكيل التوجيه السلوكي</h4>
+                <p>بيحسب احتمالية نجاح العملية</p>
+              </div>
+            </div>
+            <div class="agent-card">
+              <div class="agent-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="agent-info">
+                <h4>وكيل كشف الاحتيال</h4>
+                <p>بيحميك من أي عملية مشبوهة</p>
+              </div>
+            </div>
+            <div class="agent-card">
+              <div class="agent-icon">
+                <i class="fas fa-comments"></i>
+              </div>
+              <div class="agent-info">
+                <h4>وكيل الشرح الذكي</h4>
+                <p>بيفسرلك ليه اخترنا الماكينة دي</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         📊 STATS
+    ============================================= -->
+    <section class="stats">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">أرقام بتتكلم</span>
+          <h2>الفرق اللي هتلمسه بنفسك</h2>
+          <p>إحصائيات حقيقية من تجارب عملاء البنك الأهلي المصري</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-stopwatch"></i></div>
+            <div class="stat-number" data-target="70">0</div>
+            <div class="stat-suffix">% أقل وقت بحث</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-bullseye"></i></div>
+            <div class="stat-number" data-target="97">0</div>
+            <div class="stat-suffix">% معدل نجاح</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-users"></i></div>
+            <div class="stat-number" data-target="50">0</div>
+            <div class="stat-suffix">ألف+ مستخدم نشط</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-star"></i></div>
+            <div class="stat-number">4.9</div>
+            <div class="stat-suffix">⭐ تقييم المستخدمين</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         💬 TESTIMONIALS
+    ============================================= -->
+    <section class="testimonials">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">آراء العملاء</span>
+          <h2>عملاء الأهلي بيقولوا إيه؟</h2>
+          <p>تجارب حقيقية من مستخدمين زيك بالظبط</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <i class="fas fa-quote-right quote-icon"></i>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "صراحة التطبيق ده غيرلي حياتي! قبل كده كنت بضيع نص ساعة عشان ألاقي
+              ماكينة أهلي شغالة، دلوقتي في 5 دقايق بلاقي اللي محتاجه. حاجة
+              عبقرية من الأهلي!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">أ.م</div>
+              <div class="author-info">
+                <h5>أحمد محمود</h5>
+                <p>عميل أهلي - القاهرة</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <i class="fas fa-quote-right quote-icon"></i>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "أنا عميلة أهلي من 15 سنة، والتطبيق ده خلاني فخورة بالبنك أكتر.
+              التكنولوجيا اللي بيقدمها الأهلي دلوقتي مستوى عالمي!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">س.ع</div>
+              <div class="author-info">
+                <h5>سارة علي</h5>
+                <p>عميلة أهلي - الإسكندرية</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <i class="fas fa-quote-right quote-icon"></i>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "أكتر حاجة عجبتني إنه بيقولي ليه رشحلي الماكينة دي بالظبط. ده
+              بيخليني أثق في الترشيح وأروح وأنا مرتاح. الأهلي دايماً سباق!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">م.ح</div>
+              <div class="author-info">
+                <h5>محمد حسن</h5>
+                <p>عميل أهلي - الجيزة</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         ❓ FAQ
+    ============================================= -->
+    <section class="faq" id="faq">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">أسئلة شائعة</span>
+          <h2>أسئلة بتدور في بالك؟</h2>
+          <p>جمعنالك أكتر الأسئلة اللي بييجي في بال عملاء الأهلي</p>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item active">
+            <div class="faq-question">
+              <span>التطبيق ده بفلوس ولا ببلاش؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                التطبيق <strong>مجاني تماماً</strong> لكل عملاء البنك الأهلي
+                المصري! ده جزء من خدمات الأهلي الرقمية المتميزة اللي بنقدمها
+                لعملائنا.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>إزاي بتعرفوا الماكينة فيها فلوس ولا فاضية؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                التطبيق متكامل مباشرة مع نظام البنك الأهلي الداخلي وبيتابع حالة
+                كل ماكينة لحظياً. كمان فيه ذكاء اصطناعي بيتنبأ بمستوى الكاش
+                بناءً على عمليات السحب السابقة وأنماط الاستخدام.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>هل بياناتي وموقعي في أمان؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                أكيد! إحنا بنستخدم نفس معايير الأمان البنكية اللي البنك الأهلي
+                معروف بيها (AES-256 encryption) وملتزمين بمعايير PCI-DSS و GDPR
+                ومتطلبات البنك المركزي المصري.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>التطبيق ده لعملاء الأهلي بس؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                التطبيق
+                <strong>مخصص أساساً لعملاء البنك الأهلي المصري</strong>
+                ولماكينات الأهلي اللي عددها أكتر من 4,500 ماكينة. ده بيضمنلك
+                أعلى مستوى من الدقة والتكامل مع حسابك في الأهلي.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>لو الماكينة فضت وأنا في الطريق ليها، هتبلغني؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                طبعاً! هتوصلك تنبيه فوري لو حصل أي تغيير في حالة الماكينة،
+                وهنرشحلك بديل من ماكينات الأهلي القريبة منك على طول.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>التطبيق شغال على الأندرويد والآيفون؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                أيوه! متاح على Google Play و App Store، وكمان فيه نسخة ويب تقدر
+                تستخدمها من موقع البنك الأهلي الرسمي.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>أقدر أبحث بالعربي العادي؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                أكيد! اكتب أو قول "عاوز أسحب 5 آلاف قريب من شغلي" والتطبيق
+                هيفهمك ويرشحلك أفضل ماكينة أهلي. بنستخدم أحدث تقنيات الذكاء
+                الاصطناعي لفهم اللهجة المصرية.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>ليه أختار البنك الأهلي بالذات؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                البنك الأهلي المصري هو
+                <strong>أعرق وأكبر بنك في مصر</strong> (تأسس سنة 1898)، وعنده
+                أكبر شبكة ماكينات في الجمهورية، وبيخدم أكتر من 13 مليون عميل.
+                التطبيق ده بيستفيد من كل البنية التحتية القوية دي عشان يقدملك
+                أفضل تجربة.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         🎯 CTA
+    ============================================= -->
+    <section class="cta">
+      <div class="cta-pattern"></div>
+      <div class="section-container">
+        <div class="cta-content">
+          <span class="cta-badge">🏛️ من البنك الأهلي المصري</span>
+          <h2>جاهز توفر وقتك ومجهودك؟ 🚀</h2>
+          <p>
+            انضم لأكتر من 50 ألف عميل أهلي بيوفروا وقتهم كل يوم مع "ماكينتك".
+            حمّل التطبيق دلوقتي مجاناً!
+          </p>
+          <div class="cta-buttons">
+            <button class="btn-white">
+              <i class="fab fa-google-play"></i>
+              <div class="btn-store">
+                <span class="btn-store-small">حمّل من</span>
+                <span class="btn-store-big">Google Play</span>
+              </div>
+            </button>
+            <button class="btn-white">
+              <i class="fab fa-apple"></i>
+              <div class="btn-store">
+                <span class="btn-store-small">حمّل من</span>
+                <span class="btn-store-big">App Store</span>
+              </div>
+            </button>
+            <button class="btn-outline-white">
+              <i class="fas fa-globe"></i>
+              <span>جرّب على الويب</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         🦶 FOOTER
+    ============================================= -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>
+            <i class="fas fa-university"></i>
+            <span>ماكينتك</span>
+          </h3>
+          <p class="footer-bank">من البنك الأهلي المصري - NBE</p>
+          <p class="footer-desc">
+            أول تطبيق ذكي في مصر بيدلك على أقرب ماكينة أهلي شغالة فعلاً وفيها
+            اللي محتاجه. مدعوم بالذكاء الاصطناعي عشان تجربة بنكية أفضل.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>التطبيق</h4>
+          <ul>
+            <li><a href="#features">المميزات</a></li>
+            <li><a href="#how">إزاي بيشتغل</a></li>
+            <li><a href="#ai">الذكاء الاصطناعي</a></li>
+            <li><a href="#">التحديثات</a></li>
+            <li><a href="#">حمّل التطبيق</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>البنك الأهلي</h4>
+          <ul>
+            <li>
+              <a href="https://www.nbe.com.eg" target="_blank">الموقع الرسمي</a>
+            </li>
+            <li><a href="#">عن الأهلي</a></li>
+            <li><a href="#">الفروع والماكينات</a></li>
+            <li><a href="#">خدمات الأهلي</a></li>
+            <li><a href="#">الوظائف</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>الدعم</h4>
+          <ul>
+            <li><a href="#">مركز المساعدة</a></li>
+            <li><a href="#">تواصل معنا</a></li>
+            <li><a href="#">سياسة الخصوصية</a></li>
+            <li><a href="#">الشروط والأحكام</a></li>
+            <li>
+              <a href="tel:19623"><i class="fas fa-phone"></i> 19623</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 البنك الأهلي المصري. كل الحقوق محفوظة. صُنع بـ ❤️ في مصر</p>
+        <p class="footer-license">
+          مرخص من البنك المركزي المصري | تأسس عام 1898
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
